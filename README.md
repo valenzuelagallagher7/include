@@ -1,0 +1,2 @@
+# include
+#include-once #include &lt;File.au3> #include &lt;array.au3> ;Test function to write comments to an ini file Global $IniFile = @ScriptDir &amp; "\Test.ini" FileOpen($IniFile, 2) IniWrite($IniFile, "Test1", 1, 1) IniWrite($IniFile, "Test1", 2, 2) IniWrite($IniFile, "Test1", 3, 3) IniWrite($IniFile, "Test1", 4, 4) IniWrite($IniFile, "Test2", 1, 1) IniWrite($IniFile, "Test2", 2, 2) IniWrite($IniFile, "Test2", 3, 3) IniWrite($IniFile, "Test3", 1, 1) IniWrite($IniFile, "Test3", 2, 2) IniWrite($IniFile, "Test3", 3, 3)
