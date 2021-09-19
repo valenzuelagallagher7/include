@@ -1,0 +1,22 @@
+; Name...........: _IniWriteSectionComment
+; Description ...: Writes comment(s) to an .ini file
+; Syntax.........: _IniWriteSectionComment($IWSC_FileName, $IWSC_SectionName, $IWSC_Comment[, $IWSC_ForeAft = 1])
+; Parameters ....: $IWSC_FileName      - String path of the file to write to.
+;                 $IWSC_SectionName    - The section of the ini file to comment.
+;                 $IWSC_Comment     - String that contains the comment for the section name.
+;                 $IWSC_ForeAft     - Optional: Specifies where to put the comment in relation to the section name
+;                                        default is before the section name.
+; Return values .: Success - Returns a 1
+;                 Failure - Returns a 0
+;                 @Error  - 0 = No error.
+;                 |1 = file not found
+;                 |2 = Could not read/split file
+;                 |3 = Not an .ini file
+;                 |4 = Section Name not found
+; Author ........: Bob Marotte (BrewManNH)
+; Modified.......:
+; Remarks .......: $IWSC_ForeAft specifies whether to put the comments before or after the section name, 1 = before/0 = after
+;                 To write multiline comments, separate the lines with the "|" (pipe) character, see example below.
+; Related .......:
+; Link ..........:
+; Example .......: $Test = _IniWriteSectionComment($IniFile, "Settings", "Now is the time for all good|men to come to the aid of their country", 1)
